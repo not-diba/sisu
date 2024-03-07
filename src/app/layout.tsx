@@ -6,7 +6,7 @@ const DM_MonoFont = DM_Mono({weight: ['300', '400', '500'], subsets: ['latin']})
 
 export const metadata: Metadata = {
   title: "Sisu",
-  description: "Sisu",
+  description: "All in one web and mobile development package.",
 };
 
 export default function RootLayout({
