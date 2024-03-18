@@ -50,18 +50,20 @@ export const LoginForm = () => {
         startTransition(() => {
             login(values)
                 .then((data) => {
-                    if (!!data.error) {
+                    if (!!data!.error) {
                         setAlertMessage((prevSate) => ({
                             ...prevSate,
                             messageType: 'danger',
-                            message: data.error
+                            message: data!.error
                         }));
                     }
-                    if (!!data.success) {
+                    // @ts-ignore
+                    if (!!data!.success) {
                         setAlertMessage((prevSate) => ({
                             ...prevSate,
                             messageType: 'success',
-                            message: data.success
+                            // @ts-ignore
+                            message: data!.success
                         }));
                     }
                 })

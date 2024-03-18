@@ -1,7 +1,6 @@
 import React from 'react';
 import {Button} from "@/components/ui/button";
 import Logo from "@/components/logo";
-import {createUser} from "@/queries/users/create";
 import {ModeToggle} from "@/components/shared/mode-toggle";
 import {LoginButton} from "@/components/auth/login-button";
 

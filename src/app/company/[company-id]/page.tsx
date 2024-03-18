@@ -2,7 +2,7 @@ import React from 'react';
 import {auth, signOut} from '@/auth';
 import {Button} from "@/components/ui/button";
 
-const UserPage = async () => {
+const CompanyPage = async () => {
     const session = await auth();
 
     return (
@@ -23,4 +23,4 @@ const UserPage = async () => {
     );
 };
 
-export default UserPage;
+export default CompanyPage;
